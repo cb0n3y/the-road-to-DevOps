@@ -15,7 +15,7 @@ create_hosts_file() {
     echo -e "\n[+] Generating hosts file for DNS resolution..."
     echo "" >> /etc/hosts
     echo "$PROM_SRV     dev-prom01.fritz.box  dev-prometheus01" >> /etc/hosts
-    echo "$GRAF_SRV     dev-grafana02.fritz.box  dev-grafana01" >> /etc/hosts
+    echo "$GRAF_SRV     dev-graf01.fritz.box  dev-grafana01" >> /etc/hosts
 }
 
 install_prometheus() {
