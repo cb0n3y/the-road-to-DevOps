@@ -6,9 +6,9 @@
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/cb0n3y/the-road-to-DevOps/ci.yml?label=CI%2FCD)
 <!--
 ![DevOps Journey](https://img.shields.io/badge/devops-journey-blueviolet)
--->
 ![Goal: CKA](https://img.shields.io/badge/goal-cka-orange)
 ![Goal: AZ-104](https://img.shields.io/badge/goal-az104-blue)
+-->
 
 
 Welcome to the **Ops to DevOps** repository! This project documents my journey transitioning from a System Administrator to a DevOps Engineer, showcasing the skills, tools, and projects I've developed along the way.
