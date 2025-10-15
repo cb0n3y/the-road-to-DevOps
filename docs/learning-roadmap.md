@@ -17,6 +17,19 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 - [X] Git fundamentals (branches, merges, pull requests)  
 - [X] Networking essentials (TCP/IP, DNS, HTTP, routing, firewalls)
 
+**Resources:**
+
+- Udemy:
+    - *Linux Shell Scripting: A Project-Based Approach to Learning*
+    - *Python Mega Course: Build 20 Real-World Apps and AI Agents*
+    - *Master Python by Coding 100 Practical Problems*
+    - *Automate Everything with Python*
+    - *Master Python Programming in 2025: Zero to Expert in Python*
+    - *The Git & Github Bootcamp*
+    - *Computer-Netzwerke (CompTIA Network+) - der umfassende Kurs*
+    - *Python and Flask Bootcamp: Create Websites using Flask!*
+    - *Python Network Programming | Network Apps & Hacking Tools*
+
 **Progress:** ✅ Completed (solid foundation as System Administrator)
 
 ---
@@ -34,7 +47,10 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 - [ ] Security best practices
 
 **Resources:**
-- Udemy: *Docker Mastery*  
+
+- Udemy: 
+    - *Docker Mastery with Kubernetes +Swarm from a Docker Captain*  
+    - *Docker for the Absolute Beginner - Hands On - DevOps*
 - Play-with-Docker Labs  
 
 **Progress:** 🔄 Ongoing
@@ -51,7 +67,14 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 - [ ] RBAC, Secrets, Namespaces  
 - [ ] Helm basics and templating  
 - [ ] Managing environments (VAL, PERF, PROD)  
-- [ ] Troubleshooting pods and controllers  
+- [ ] Troubleshooting pods and controllers
+
+**Resources:**
+
+- Udemy:
+    - *Certified Kubernetes Administrator (CKA) with Practice Tests*
+    - *Helm Kubernetes Packaging Manager for Developers and DevOps*
+    - *Helm Masterclass: 50 Practical Demos for Kubernetes DevOps*
 
 **Certifications:**  
 - [ ] CKA — Certified Kubernetes Administrator  
@@ -71,6 +94,14 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 - [ ] Infrastructure lifecycle (plan, apply, destroy)  
 - [ ] Ansible basics for configuration management  
 - [ ] Managing infrastructure across environments  
+
+**Resources:**
+
+- Udemy: 
+    - *Dive Into Ansible - Beginner to Expert in Ansible - DevOps*
+    - *Ansible Advanced - Hands-On - DevOps*
+    - *Terraform for the Absolute Beginners with Labs*
+    - *HashiCorp Certified: Terraform Associate 003 - Hands-On Labs*
 
 **Certifications:**  
 - [ ] Terraform Associate  
@@ -93,7 +124,13 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 - [X] Artifact management (Docker Hub, Harbor, etc.)
 
 **Resources:**
-- Udemy: *Jenkins from Zero to Hero*  
+- Udemy:
+    - *Jenkins from Zero to Hero*
+    - *Jenkins: Jobs, Pipelines, CI/CD and DevOps for Beginners*
+    - *Argo CD Essential Guide for End Users with Practice*
+    - *GitLab CI/CD: Pipelines, CI/CD and DevOps for Beginners*
+    - *DevOps, CI/CD(Continuous Integration/Delivery) for Beginners*
+    - *GitLab — A Complete Hands-On for CI/CD Pipelines & DevOps*
 - Official ArgoCD & FluxCD docs  
 
 **Progress:** 🧠 Currently Learning (Jenkins focus)
@@ -105,14 +142,21 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 **Goal:** Build visibility and reliability into systems.
 
 **Topics:**
-- [ ] Prometheus metrics and exporters  
-- [ ] Grafana dashboards  
-- [ ] Alertmanager configuration  
+- [X] Prometheus metrics and exporters  
+- [X] Grafana dashboards  
+- [X] Alertmanager configuration  
 - [ ] Log aggregation (Loki, ELK, etc.)  
 - [ ] SLOs, SLIs, and SLA design  
 - [ ] Incident response automation  
 
-**Progress Summary::** 🔄  `3 / 6` ✅  
+**Progress Summary::** 🔄  `3 / 6` ✅
+
+**Resources:**
+
+- Udemy:
+    - *Prometheus | The Complete Hands-On for Monitoring & Alerting*
+    - *Grafana*
+    - *Elasticsearch 9 and the Elastic Stack: In Depth and Hands On*
 
 ---
 
@@ -143,7 +187,12 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 - [ ] AKS (Azure Kubernetes Service)  
 - [ ] Azure Monitor & Log Analytics  
 - [ ] Azure AD (Entra ID) integration  
-- [ ] Terraform on Azure  
+- [ ] Terraform on Azure
+
+**Resources:**
+
+- Udemy:
+    - *AZ-104 Microsoft Azure Administrator Exam Prep*
 
 **Certifications:**  
 - [ ] AZ-104: Microsoft Azure Administrator  
@@ -189,3 +238,12 @@ This roadmap is **iterative** — it evolves as I grow and as the industry shift
 Every phase will link to practical examples and notes from the main repo as they’re added.
 
 > _"Consistency beats intensity. Learn every day, even if it’s small."_ 💪
+
+**Other Resources:**
+
+- Udemy: 
+    - *Decoding DevOps – From Basics to Advanced Projects with AI*
+    - *The Ultimate DevOps Bootcamp*
+    - *Administración de Almacenamiento Glusterfs*
+    - *Java Masterclass 2025: 130+ Hours of Expert Lessons*
+    - **
