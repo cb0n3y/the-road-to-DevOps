@@ -1,0 +1,66 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+PROM_SRV = "192.168.178.100"
+GRAF_SRV = "192.168.178.101"
+
+
+BOX_CPUS = 2          # should be integer, not string
+BOX_RAM = 4096        # should be integer, not string
+PORTS = [9090, 9100]  # ports that Prometheus and node_exporter need open
+
+VAGRANT_DISABLE_VBOXSYMLINKCREATE = "1"
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "generic/centos9s"
+  config.vm.box_check_update = true
+  config.ssh.forward_agent = true
+
+  config.vm.provision "shell", inline: <<-SHELL
+    localectl set-keymap de-deadgraveacute
+    # Configuring DNF
+    echo "fastestmirror=True" >> /etc/dnf/dnf.conf
+    echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf
+    dnf makecache
+    dnf -y update
+    echo "" >> /etc/hosts
+    echo "$PROM_SRV     dev-prom01.fritz.box  dev-prom01" >> /etc/hosts
+    echo "$GRAF_SRV     dev-graf01.fritz.box  dev-graf01" >> /etc/hosts
+  SHELL
+
+  config.vm.define "prometheus" do |prometheus|
+    prometheus.vm.hostname = "dev-prom01"
+    prometheus.vm.network "public_network", ip: PROM_SRV
+
+    prometheus.vm.provider "virtualbox" do |vb|
+      vb.gui = false
+      vb.name = "dev-prom01"
+      vb.customize ["modifyvm", :id, "--groups", "/DevOps-Lab/Monitoring"]
+      vb.memory = BOX_RAM
+      vb.cpus = BOX_CPUS
+    end
+
+    prometheus.vm.provision :shell,
+      path: "scripts/prom-setup.sh",
+      env: {
+        "PROM_SRV" => PROM_SRV,
+      }
+    prometheus.vm.provision :shell,
+      path: "../../../shared-scripts/create_own_user.sh",
+      env: {
+        "USER_NAME" => "cb0n3y",
+        "USER_PASSWORD" => ENV['USER_PASSWORD']
+      }
+
+    # Pass ports as a space-separated string
+    prometheus.vm.provision "shell",
+      path: "../../../shared-scripts/set_fw_rules.sh",
+      env: { "PORTS" => PORTS.join(" ") }
+    
+    prometheus.vm.provision "file", source: "../../../shared-scripts/prometheus/prometheus.yml", destination: "/home/vagrant/prometheus.yml"
+
+    prometheus.vm.provision :shell,
+      path: "../../../shared-scripts/prometheus/deploy_prometheus_config.sh"  
+  end
+end
