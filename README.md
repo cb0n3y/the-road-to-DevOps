@@ -89,7 +89,7 @@ Automated pipelines ensure smooth and consistent deployments across environments
 
 ---
 
-## 🧭 Learning Roadmap
+## Learning Roadmap
 
 You can follow my ongoing progress and study plan in  
 [`docs/learning-roadmap.md`](docs/learning-roadmap.md)
