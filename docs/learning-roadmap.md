@@ -11,11 +11,11 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 **Goal:** Strengthen the core IT fundamentals that power all DevOps work.
 
 **Topics:**
-- Linux internals, permissions, and process management  
-- Bash scripting for automation  
-- Python basics for scripting and DevOps tasks  
-- Git fundamentals (branches, merges, pull requests)  
-- Networking essentials (TCP/IP, DNS, HTTP, routing, firewalls)
+- [X] Linux internals, permissions, and process management  
+- [X] Bash scripting for automation  
+- [X] Python basics for scripting and DevOps tasks  
+- [X] Git fundamentals (branches, merges, pull requests)  
+- [X] Networking essentials (TCP/IP, DNS, HTTP, routing, firewalls)
 
 **Progress:** ✅ Completed (solid foundation as System Administrator)
 
@@ -26,12 +26,12 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 **Goal:** Learn to build, run, and manage applications in containers.
 
 **Topics:**
-- Docker basics: images, containers, volumes, networks  
-- Writing custom Dockerfiles  
-- Multi-stage builds  
-- Docker Compose  
-- Image management and tagging  
-- Security best practices
+- [ ] Docker basics: images, containers, volumes, networks  
+- [ ] Writing custom Dockerfiles  
+- [ ] Multi-stage builds  
+- [ ] Docker Compose  
+- [ ] Image management and tagging  
+- [ ] Security best practices
 
 **Resources:**
 - Udemy: *Docker Mastery*  
@@ -46,12 +46,12 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 **Goal:** Orchestrate containerized applications in clusters.
 
 **Topics:**
-- Kubernetes architecture (nodes, API server, scheduler, etcd)  
-- Deployments, Services, Ingress, and ConfigMaps  
-- RBAC, Secrets, Namespaces  
-- Helm basics and templating  
-- Managing environments (VAL, PERF, PROD)  
-- Troubleshooting pods and controllers  
+- [ ] Kubernetes architecture (nodes, API server, scheduler, etcd)  
+- [ ] Deployments, Services, Ingress, and ConfigMaps  
+- [ ] RBAC, Secrets, Namespaces  
+- [ ] Helm basics and templating  
+- [ ] Managing environments (VAL, PERF, PROD)  
+- [ ] Troubleshooting pods and controllers  
 
 **Certifications:**  
 - [ ] CKA — Certified Kubernetes Administrator  
@@ -66,11 +66,11 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 **Goal:** Automate provisioning and configuration of infrastructure.
 
 **Topics:**
-- Terraform fundamentals: providers, state, modules  
-- Variables, outputs, and workspaces  
-- Infrastructure lifecycle (plan, apply, destroy)  
-- Ansible basics for configuration management  
-- Managing infrastructure across environments  
+- [ ] Terraform fundamentals: providers, state, modules  
+- [ ] Variables, outputs, and workspaces  
+- [ ] Infrastructure lifecycle (plan, apply, destroy)  
+- [ ] Ansible basics for configuration management  
+- [ ] Managing infrastructure across environments  
 
 **Certifications:**  
 - [ ] Terraform Associate  
@@ -85,12 +85,12 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 **Goal:** Automate build, test, and deployment workflows using pipelines and GitOps.
 
 **Topics:**
-- Jenkins installation and Pipeline-as-Code (Declarative & Scripted)  
-- GitHub Actions  
-- ArgoCD & FluxCD setup for continuous delivery  
-- Webhooks and triggers  
-- Branch strategies and versioning (VAL → PERF → PROD)  
-- Artifact management (Docker Hub, Harbor, etc.)
+- [*] Jenkins installation and Pipeline-as-Code (Declarative & Scripted)  
+- [ ] GitHub Actions  
+- [ ] ArgoCD & FluxCD setup for continuous delivery  
+- [ ] Webhooks and triggers  
+- [ ] Branch strategies and versioning (VAL → PERF → PROD)  
+- [X] Artifact management (Docker Hub, Harbor, etc.)
 
 **Resources:**
 - Udemy: *Jenkins from Zero to Hero*  
@@ -105,14 +105,14 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 **Goal:** Build visibility and reliability into systems.
 
 **Topics:**
-- Prometheus metrics and exporters  
-- Grafana dashboards  
-- Alertmanager configuration  
-- Log aggregation (Loki, ELK, etc.)  
-- SLOs, SLIs, and SLA design  
-- Incident response automation  
+- [ ] Prometheus metrics and exporters  
+- [ ] Grafana dashboards  
+- [ ] Alertmanager configuration  
+- [ ] Log aggregation (Loki, ELK, etc.)  
+- [ ] SLOs, SLIs, and SLA design  
+- [ ] Incident response automation  
 
-**Progress:** ✅ Prometheus & Grafana Vagrant lab completed  
+**Progress Summary::** 🔄  `3 / 6` ✅  
 
 ---
 
@@ -121,11 +121,11 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 **Goal:** Implement security best practices across the stack.
 
 **Topics:**
-- Kubernetes security (RBAC, NetworkPolicies, PodSecurity)  
-- Secrets management (Vault, K8s secrets, SOPS)  
-- Docker image scanning  
-- Supply chain security (signing, provenance)  
-- Secure CI/CD pipelines  
+- [ ] Kubernetes security (RBAC, NetworkPolicies, PodSecurity)  
+- [ ] Secrets management (Vault, K8s secrets, SOPS)  
+- [ ] Docker image scanning  
+- [ ] Supply chain security (signing, provenance)  
+- [ ] Secure CI/CD pipelines  
 
 **Certifications:**  
 - [ ] CKS — Certified Kubernetes Security Specialist  
@@ -139,11 +139,11 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 **Goal:** Apply DevOps principles to real cloud infrastructure.
 
 **Topics:**
-- Azure Resource Manager (ARM), Resource Groups, and Networking  
-- AKS (Azure Kubernetes Service)  
-- Azure Monitor & Log Analytics  
-- Azure AD (Entra ID) integration  
-- Terraform on Azure  
+- [ ] Azure Resource Manager (ARM), Resource Groups, and Networking  
+- [ ] AKS (Azure Kubernetes Service)  
+- [ ] Azure Monitor & Log Analytics  
+- [ ] Azure AD (Entra ID) integration  
+- [ ] Terraform on Azure  
 
 **Certifications:**  
 - [ ] AZ-104: Microsoft Azure Administrator  
@@ -158,11 +158,11 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 **Goal:** Combine all skills into full-stack DevOps solutions.
 
 **Projects:**
-- Multi-environment setup (VAL / PERF / PROD)
-- Automated deployment pipelines (Jenkins + GitOps)
-- End-to-end observability setup  
-- Security hardening and RBAC policies  
-- Terraform + Ansible hybrid IaC setup  
+- [ ] Multi-environment setup (VAL / PERF / PROD)
+- [ ] Automated deployment pipelines (Jenkins + GitOps)
+- [ ] End-to-end observability setup  
+- [ ] Security hardening and RBAC policies  
+- [ ] Terraform + Ansible hybrid IaC setup  
 
 **Long-term goal:**  
 🎯 Become a Senior DevOps Engineer with strong Cloud, Kubernetes, and Security expertise.
