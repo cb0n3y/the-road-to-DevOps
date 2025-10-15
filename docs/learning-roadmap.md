@@ -4,6 +4,10 @@ This document outlines my personal **DevOps learning journey** — the sequence 
 
 Each section lists key topics, learning goals, and certifications I aim to achieve, along with progress indicators.
 
+> **Legend:**  
+> ✅ Completed 🔄 In Progress ⏳ Planned 🚀 Starting 🧠 Learning
+
+
 ---
 
 ## 🏗️ Phase 0 — Foundation (Linux, Scripting, Networking)
@@ -11,11 +15,24 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 **Goal:** Strengthen the core IT fundamentals that power all DevOps work.
 
 **Topics:**
-- [X] Linux internals, permissions, and process management  
-- [X] Bash scripting for automation  
-- [X] Python basics for scripting and DevOps tasks  
-- [X] Git fundamentals (branches, merges, pull requests)  
-- [X] Networking essentials (TCP/IP, DNS, HTTP, routing, firewalls)
+- [x] Linux internals, permissions, and process management  
+- [x] Bash scripting for automation  
+- [x] Python basics for scripting and DevOps tasks  
+- [x] Git fundamentals (branches, merges, pull requests)  
+- [x] Networking essentials (TCP/IP, DNS, HTTP, routing, firewalls)
+
+**Resources:**
+
+- Udemy:
+    - *Linux Shell Scripting*
+    - *Python Mega Course*
+    - *Master Python by Coding*
+    - *Automate Everything with Python*
+    - *Master Python Programming in 2025*
+    - *The Git & Github Bootcamp*
+    - *Computer-Netzwerke (CompTIA Network+)*
+    - *Python and Flask Bootcamp*
+    - *Python Network Programming*
 
 **Progress:** ✅ Completed (solid foundation as System Administrator)
 
@@ -34,7 +51,10 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 - [ ] Security best practices
 
 **Resources:**
-- Udemy: *Docker Mastery*  
+
+- Udemy: 
+    - *Docker Mastery*  
+    - *Docker for the Absolute Beginner*
 - Play-with-Docker Labs  
 
 **Progress:** 🔄 Ongoing
@@ -51,7 +71,14 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 - [ ] RBAC, Secrets, Namespaces  
 - [ ] Helm basics and templating  
 - [ ] Managing environments (VAL, PERF, PROD)  
-- [ ] Troubleshooting pods and controllers  
+- [ ] Troubleshooting pods and controllers
+
+**Resources:**
+
+- Udemy:
+    - *Certified Kubernetes Administrator (CKA)*
+    - *Helm Kubernetes Packaging Manager*
+    - *Helm Masterclass*
 
 **Certifications:**  
 - [ ] CKA — Certified Kubernetes Administrator  
@@ -72,6 +99,14 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 - [ ] Ansible basics for configuration management  
 - [ ] Managing infrastructure across environments  
 
+**Resources:**
+
+- Udemy: 
+    - *Dive Into Ansible*
+    - *Ansible Advanced*
+    - *Terraform for the Absolute Beginners with Labs*
+    - *HashiCorp Certified*
+
 **Certifications:**  
 - [ ] Terraform Associate  
 - [ ] Red Hat Certified Engineer (revalidation later)
@@ -85,15 +120,21 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 **Goal:** Automate build, test, and deployment workflows using pipelines and GitOps.
 
 **Topics:**
-- [*] Jenkins installation and Pipeline-as-Code (Declarative & Scripted)  
+- [x] Jenkins installation and Pipeline-as-Code (Declarative & Scripted)(../04_gitops/jenkins/00_installation)
 - [ ] GitHub Actions  
 - [ ] ArgoCD & FluxCD setup for continuous delivery  
 - [ ] Webhooks and triggers  
 - [ ] Branch strategies and versioning (VAL → PERF → PROD)  
-- [X] Artifact management (Docker Hub, Harbor, etc.)
+- [x] Artifact management (Docker Hub, Harbor, etc.)
 
 **Resources:**
-- Udemy: *Jenkins from Zero to Hero*  
+- Udemy:
+    - *Jenkins from Zero to Hero*
+    - *Jenkins*
+    - *Argo CD Essential Guide*
+    - *GitLab CI/CD*
+    - *DevOps, CI/CD(Continuous Integration/Delivery)*
+    - *GitLab*
 - Official ArgoCD & FluxCD docs  
 
 **Progress:** 🧠 Currently Learning (Jenkins focus)
@@ -105,14 +146,21 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 **Goal:** Build visibility and reliability into systems.
 
 **Topics:**
-- [ ] Prometheus metrics and exporters  
-- [ ] Grafana dashboards  
-- [ ] Alertmanager configuration  
+- [x] Prometheus metrics and exporters  
+- [x] Grafana dashboards  
+- [x] Alertmanager configuration  
 - [ ] Log aggregation (Loki, ELK, etc.)  
 - [ ] SLOs, SLIs, and SLA design  
 - [ ] Incident response automation  
 
-**Progress Summary::** 🔄  `3 / 6` ✅  
+**Progress Summary:** 🔄  `3 / 6` ✅
+
+**Resources:**
+
+- Udemy:
+    - *Prometheus*
+    - *Grafana*
+    - *Elasticsearch 9 and the Elastic Stack*
 
 ---
 
@@ -143,7 +191,12 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 - [ ] AKS (Azure Kubernetes Service)  
 - [ ] Azure Monitor & Log Analytics  
 - [ ] Azure AD (Entra ID) integration  
-- [ ] Terraform on Azure  
+- [ ] Terraform on Azure
+
+**Resources:**
+
+- Udemy:
+    - *AZ-104 Microsoft Azure Administrator Exam Prep*
 
 **Certifications:**  
 - [ ] AZ-104: Microsoft Azure Administrator  
@@ -173,19 +226,53 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 
 | Certification | Status | Priority |
 |----------------|---------|-----------|
-| RHCSA (Red Hat Certified SysAdmin) | ❌ Expired | Medium |
-| LPIC-1 | ❌ Expired | Low |
-| CKA | 🔄 In Progress | High |
-| CKS | ⏳ Planned | High |
-| Terraform Associate | ⏳ Planned | Medium |
-| AZ-104 | 🚀 Starting | High |
-| AZ-400 | ⏳ Planned | Medium |
+| [CKA](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) | 🔄 In Progress | High |
+| [CKS](https://training.linuxfoundation.org/certification/certified-kubernetes-security-specialist-cks/) | ⏳ Planned | High |
+| [Terraform Associate](https://developer.hashicorp.com/certifications/terraform-associate) | ⏳ Planned | Medium |
+| [AZ-104](https://learn.microsoft.com/en-us/certifications/azure-administrator/) | 🚀 Starting | High |
+| [AZ-400](https://learn.microsoft.com/en-us/certifications/devops-engineer/) | ⏳ Planned | Medium |
 
 ---
 
-## 💬 Notes
+## Next Steps
 
-This roadmap is **iterative** — it evolves as I grow and as the industry shifts.  
-Every phase will link to practical examples and notes from the main repo as they’re added.
+- Deep dive into Jenkins shared libraries and advanced Groovy scripting  
+- Start Helm templating and CKA lab environments  
+- Prepare Terraform Associate certification  
+- Build a local CI/CD lab connecting Jenkins → ArgoCD → K8s
+
+---
+
+**Other Resources:**
+
+- Udemy: 
+    - *Decoding DevOps – From Basics to Advanced Projects with AI*
+    - *The Ultimate DevOps Bootcamp*
+    - *Administración de Almacenamiento Glusterfs*
+    - *Java Masterclass 2025: 130+ Hours of Expert Lessons*
+    - **
+
+---
+
+## 📌 Notes
+
+- This roadmap is **iterative** — it will evolve as I learn new technologies and gain hands-on experience.  
+- Each phase links to code examples, labs, and documentation in the main repo wherever possible.  
+- Feedback, suggestions, and collaboration are welcome — feel free to open an issue or submit a PR.
+
+---
+
+## 🔗 Useful Links
+
+- [Main Repo](https://github.com/cb0n3y/the-road-to-DevOps)   
+- [Udemy Courses List](#resources) 
+
+---
+
+## 📜 License
+
+This roadmap and all associated materials are licensed under the [MIT License](../LICENSE).
+
+---
 
 > _"Consistency beats intensity. Learn every day, even if it’s small."_ 💪
