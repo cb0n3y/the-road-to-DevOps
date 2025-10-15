@@ -52,7 +52,7 @@ Welcome to the **Ops to DevOps** repository! This project documents my journey t
 - [Repository Structure](#repository-structure)
 - [Deployment Strategy](#deployment-strategy)
 - [Getting Started](#getting-started)
-- [Learning Roadmap](#learning roadmap)
+- [Learning Roadmap](#-learning roadmap)
 - [Contributing](#contributing)
 - [License](#license)
 
