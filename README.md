@@ -17,10 +17,11 @@ Welcome to the **Ops to DevOps** repository! This project documents my journey t
 
 ## 🧩 Current Focus
 
-- Modular Vagrantfiles for Grafana and Prometheus  
-- Shared and app-specific setup scripts  
-- Gradual migration to Ansible for automation  
-- Terraform-based IaaC and Cloud automation (coming soon)
+- Deepening Kubernetes & Helm deployment workflows  
+- Building Jenkins pipelines (CI/CD) and GitOps automation  
+- Expanding monitoring with Prometheus & Grafana  
+- Introducing Terraform and Ansible for IaC  
+- Preparing for CKA, CKS, and Azure certifications  
 
 ---
 
@@ -49,10 +50,9 @@ Welcome to the **Ops to DevOps** repository! This project documents my journey t
 ## 📑 Table of Contents
 
 - [Repository Structure](#repository-structure)
-- [Lab](#lab)
-- [IaaC](#iaac)
 - [Deployment Strategy](#deployment-strategy)
 - [Getting Started](#getting-started)
+- [Learning Roadmap](#learning roadmap)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -62,43 +62,19 @@ Welcome to the **Ops to DevOps** repository! This project documents my journey t
 
 The repository is organized into two main sections:
 
-- **Lab/**: Hands-on configurations, scripts, and documentation related to various DevOps tools and technologies.
-- **IaaC/**: Infrastructure as Code examples, including tools such as Vagrant, Ansible, Terraform, and others. These projects demonstrate infrastructure provisioning, automation, and environment management. 
+This repository is organized into modular learning stages that reflect the DevOps journey — from foundational skills to advanced GitOps and monitoring setups.
 
----
-
-## Lab
-
-This section includes:
-
-- **Ansible**: Playbooks and roles for automation.
-- **Bash**: Scripts for various administrative tasks.
-- **Python**: Automation and utility scripts.
-- **Docker**: Containerization setups.
-- **Kubernetes**: Deployment configurations.
-- **CI/CD**: Continuous Integration and Deployment pipelines.
-- **Monitoring**: Tools and configurations for system monitoring.
-- **Security**: Implementations to ensure system integrity.
-- **Networking**: Configurations and scripts related to network management.
-
-> Each subfolder contains a `README.md` with detailed information and usage instructions.
-
----
-
-## IaaC
-
-The IaaC/ directory represents a complete infrastructure setup, structured into different environments:
-
-- **base/**: Shared configurations across all environments.
-- **staging/**: Environment for testing and validation.
-- **production/**: Live environment configurations.
-
-Each environment includes:
-
-- **applications/**: Deployed applications.
-- **configs/**: Configuration files.
-- **monitoring/**: Monitoring setups.
-- **security/**: Security implementations.
+| Directory | Description |
+|------------|--------------|
+| `00_foundation/` | Linux, Bash, Python, Git, and networking fundamentals. |
+| `01_containers/` | Docker basics, images, and Compose examples. |
+| `02_kubernetes/` | Core Kubernetes resources, Helm charts, and troubleshooting. |
+| `03_infrastructure-as-code/` | Terraform modules and examples for AWS/Azure. |
+| `04_gitops/` | GitOps workflows using ArgoCD, FluxCD, and Jenkins pipelines. |
+| `05_monitoring-observability/` | Prometheus, Grafana, dashboards, and alerting setups. |
+| `06_security/` | RBAC, network policies, secrets management, and CKS prep notes. |
+| `07_environments/` | Configs for VAL, PERF, and PROD-like environments. |
+| `docs/` | Study plans, learning roadmaps, and certification notes. |
 
 ---
 
@@ -110,6 +86,13 @@ Deployments are managed using Git tags:
 - **`vX.Y.Z-beta`**: Deploys to staging.
 
 Automated pipelines ensure smooth and consistent deployments across environments.
+
+---
+
+## 🧭 Learning Roadmap
+
+You can follow my ongoing progress and study plan in  
+[`docs/learning-roadmap.md`](docs/learning-roadmap.md)
 
 ---
 
