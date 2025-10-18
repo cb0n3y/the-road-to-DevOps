@@ -98,3 +98,11 @@ Fine-grained personal access tokens or “secret text” credentials are **not c
 ---
 
 **Tags:** `#jenkins` `#github` `#multibranch` `#integration` `#troubleshooting`
+
+---
+
+## 🏆 Lessons Learned
+- Jenkins Multibranch Pipelines still require **classic PAT + username** for private repos.
+- Fine-grained tokens are not supported yet by the plugin.
+- Always check API quotas to avoid indexing failures.
+- Consider documenting credentials strategy and token expiration for future maintenance.
