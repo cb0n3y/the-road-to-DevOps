@@ -15,6 +15,36 @@ This repo is intended to be a living knowledge base that grows as I explore Jenk
 
 ---
 
+# 🧩 Jenkins — GitOps & Automation
+
+This section covers **Jenkins setup, integration, and pipeline design** as part of my DevOps learning path.
+
+For hands-on Jenkins Pipeline experiments and daily progress logs, see my dedicated repo:
+
+👉 [cb0n3y/jenkins-pipelines](https://github.com/cb0n3y/jenkins-pipelines)
+
+---
+
+## 📘 Local Topics
+
+- [Installation & Setup](00_installation/README.md)
+- [First Pipeline](01_first-pipeline/README.md)
+- [Integrations (GitHub, Webhooks, etc.)](02_integration/README.md)
+    - 🔹 Case study: [GitHub Multibranch Pipeline Integration Issue](02_integration/github-multibranch-issue.md)- 🔹 Case study: [GitHub Multibranch Pipeline Integration Issue](02_integration/01_github-authentication-issue.md)
+
+Each of these directories contains detailed notes and steps from my Jenkins setup and integration journey.
+
+---
+
+## 📦 Related Repositories
+
+| Repository | Description |
+|-------------|-------------|
+| [jenkins-pipelines](https://github.com/cb0n3y/jenkins-pipelines) | Hands-on Jenkins pipeline experiments |
+| [the-road-to-DevOps](https://github.com/cb0n3y/the-road-to-DevOps) | Broader DevOps learning portfolio |
+
+---
+
 ## 📚 What to Expect
 
 In this repository, you'll find:
