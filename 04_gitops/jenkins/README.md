@@ -27,7 +27,7 @@ For hands-on Jenkins Pipeline experiments and daily progress logs, see my dedica
 
 ## 📘 Local Topics
 
-- [Installation & Setup](00_installation/README.md)
+- [Installation & Setup](00_installation/01_installation-server.md)
 - [First Pipeline](01_first-pipeline/README.md)
 - [Integrations (GitHub, Webhooks, etc.)](02_integration/README.md)
     - 🔹 Case study: [GitHub Multibranch Pipeline Integration Issue](02_integration/github-multibranch-issue.md)- 🔹 Case study: [GitHub Multibranch Pipeline Integration Issue](02_integration/01_github-authentication-issue.md)
