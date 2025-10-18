@@ -91,7 +91,7 @@ In the Jenkins web interface:
 3. Fill in:
     - Remote root directory: /opt/jenkins-agent
     - Labels: (optional, e.g., linux, docker)
-    - # of executors: usually 1–2
+    - of executors: usually 1–2
     - Launch method: “Launch agents via SSH”
 4. Under SSH configuration:
     - Host: <worker-node-hostname-or-ip>
