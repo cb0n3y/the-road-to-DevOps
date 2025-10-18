@@ -40,6 +40,7 @@ Each of these directories contains detailed notes and steps from my Jenkins setu
 
 | Repository | Description |
 |-------------|-------------|
+| [jenkins-pipelines](https://github.com/cb0n3y/jenkins-pipelines) | Hands-on Jenkins pipeline experiments |
 | [the-road-to-DevOps](https://github.com/cb0n3y/the-road-to-DevOps) | Broader DevOps learning portfolio |
 
 ---
