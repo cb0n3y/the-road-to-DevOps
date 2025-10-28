@@ -120,7 +120,7 @@ Each section lists key topics, learning goals, and certifications I aim to achie
 **Goal:** Automate build, test, and deployment workflows using pipelines and GitOps.
 
 **Topics:**
-- [x] Jenkins installation and Pipeline-as-Code (Declarative & Scripted)(../04_gitops/jenkins/00_installation)
+- [x] Jenkins installation and Pipeline-as-Code (Declarative & Scripted)(../04_gitops/jenkins/00_installation/01_installation-server.md)
 - [ ] GitHub Actions  
 - [ ] ArgoCD & FluxCD setup for continuous delivery  
 - [ ] Webhooks and triggers  
