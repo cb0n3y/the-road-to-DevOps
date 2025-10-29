@@ -1,13 +1,10 @@
----
 name: CI Pipeline
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   checkout-repository:
@@ -22,16 +19,16 @@ jobs:
   lint-yaml:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Validate YAML files
-        uses: actions/checkout@v4
         run: |
           find . -name '*.yml' -o -name '*.yaml' | xargs -I {} yamllint -c .yamllint {}
 
   lint-trailing:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Check for trailing whitespace
-        uses: actions/checkout@v4
         run: |
           if grep -rI --include '*.groovy' --include '*.yml' '[[:space:]]$' ./; then
             echo "Trailing whitespace found!"
@@ -52,7 +49,7 @@ jobs:
 
       - name: Install npm-groovy-lint
         run: npm install -g npm-groovy-lint
-        
+
       - name: Lint Groovy files
         run: |
           set +e
