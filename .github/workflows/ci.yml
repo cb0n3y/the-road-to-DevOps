@@ -49,7 +49,7 @@ jobs:
 
       - name: Install npm-groovy-lint
         run: npm install -g npm-groovy-lint
-        
+
       - name: Lint Groovy files
         run: |
           set +e
