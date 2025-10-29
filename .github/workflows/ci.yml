@@ -20,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install yamllint
+        run: pip install yamllint
       - name: Validate YAML files
         run: |
           find . -name '*.yml' -o -name '*.yaml' | xargs -I {} yamllint -c .yamllint {}
@@ -58,3 +60,67 @@ jobs:
           if [ $exit_code -ne 0 ]; then
             echo "Groovy lint finished with infos/warnings. Ignoring for CI success."
           fi
+
+  validate-vagrantfiles:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
+      - name: Install Vagrant
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y vagrant
+
+      - name: Validate Vagrantfile(s)
+        run: |
+          set -euo pipefail
+          vfiles=$(find . -type f -name 'Vagrantfile')
+
+          if [ -z "$vfiles" ]; then
+            echo "No Vagrantfile found — skipping validation."
+            exit 0
+          fi
+
+          echo "Found Vagrantfile(s):"
+          echo "$vfiles"
+          echo
+
+          failures=0
+          for f in $vfiles; do
+            echo "==> Checking Ruby syntax for $f"
+            if ruby -c "$f"; then
+              echo "OK: $f"
+            else
+              echo "ERROR: Ruby syntax issue in $f"
+              failures=$((failures + 1))
+            fi
+          done
+
+          if [ "$failures" -ne 0 ]; then
+            echo "Vagrantfile validation failed for $failures file(s)."
+            exit 1
+          fi
+
+          echo "All Vagrantfile(s) passed Ruby syntax check."
+
+  validate-terraform:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.9.8  # or your preferred version
+
+      - name: Validate Terraform files
+        run: |
+          set -e
+          echo "Running terraform fmt check..."
+          terraform fmt -check -recursive
+          echo "Running terraform validate..."
+          terraform init -backend=false
+          terraform validate
