@@ -1,0 +1,23 @@
+{
+    "files": [{
+      "aql": {
+        "items.find": {
+          "type": "file",
+          "size": {"$gt":"250000000"},
+          "stat.downloads": {"$eq":null},
+          "$or": [
+            {"name":{"$match":"*.tar"}},
+            {"name":{"$match":"*.tar.gz"}},
+            {"name":{"$match":"*.zip"}},
+            {"name":{"$match":"*.jar"}},
+            {"name":{"$match":"*.rpm"}},
+            {"name":{"$match": "*-SNAPSHOT"}}
+          ],
+          "$and": [
+            {"repo":{"$nmatch":"some-repo-tech-*"}}
+          ]
+        }
+      }
+    }]
+  }
+  
