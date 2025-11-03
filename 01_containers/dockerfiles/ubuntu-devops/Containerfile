@@ -1,0 +1,38 @@
+FROM ubuntu:24.04
+
+LABEL org.opencontainers.image.title="ubuntu-devops"
+LABEL org.opencontainers.image.description="Extended Ubuntu 24.04 base image with essential DevOps & cloud tooling for Jenkins pipelines"
+LABEL org.opencontainers.image.authors="devops@example.com"
+LABEL org.opencontainers.image.licenses="MIT"
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    LANG=C.UTF-8 \
+    LC_ALL=C.UTF-8 \
+    HELM_VERSION=v3.18.0 \
+    SYFT_VERSION=v1.36.0 
+
+# Install DevOps tooling in a single layer
+RUN set -eux; \
+    apt-get update && \
+    apt-get install -y --no-install-recommends \
+        git tar wget gnupg lsb-release ca-certificates curl python3-pip && \
+    \
+    # kubectl
+    curl -fsSLo /usr/local/bin/kubectl "https://dl.k8s.io/release/$(curl -sL https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl" && \
+    chmod +x /usr/local/bin/kubectl && \
+    \
+    # Helm
+    curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash -s -- --version $HELM_VERSION && \
+    \
+    # Install cosign for Syft signature verification
+    curl -sSfL https://github.com/sigstore/cosign/releases/latest/download/cosign-linux-amd64 \
+        -o /usr/local/bin/cosign && \
+    chmod +x /usr/local/bin/cosign && \
+    \
+    # Syft (with cosign signature verification)
+    curl -sSfL https://get.anchore.io/syft | sh -s -- -b /usr/local/bin -v $SYFT_VERSION && \
+    \
+    # Clean up
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+CMD ["bash"]
